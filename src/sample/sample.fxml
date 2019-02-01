@@ -4,9 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -41,37 +41,23 @@
       <ProgressBar layoutX="411.0" layoutY="225.0" prefWidth="200.0" progress="0.21" />
       <ProgressBar layoutX="411.0" layoutY="316.0" prefWidth="200.0" progress="0.18" />
       <ProgressBar layoutX="411.0" layoutY="400.0" prefWidth="200.0" progress="0.79" />
-      <Label layoutX="31.0" layoutY="358.0" text="Image" textFill="#462cc9">
+      <Label layoutX="77.0" layoutY="130.0" text="Image" textFill="#462cc9">
          <font>
             <Font name="Palatino Linotype Italic" size="28.0" />
          </font>
       </Label>
-      <TextField fx:id="path" layoutX="25.0" layoutY="406.0" text=" Image Path File" />
-      <Button fx:id="submit" layoutX="181.0" layoutY="406.0" mnemonicParsing="false" text="Submit" />
-      <ProgressIndicator layoutX="157.0" layoutY="189.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="73.0" prefWidth="87.0" progress="0.47" />
-      <Label layoutX="31.0" layoutY="190.0" text="00:00" textFill="#2f2f2f">
-         <font>
-            <Font name="Monotype Corsiva" size="54.0" />
-         </font>
-      </Label>
+      <TextField fx:id="path" layoutX="37.0" layoutY="166.0" text=" Image Path File" />
+      <Button fx:id="submit" layoutX="199.0" layoutY="166.0" mnemonicParsing="false" text="Submit" />
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="648.0">
         <menus>
-          <Menu fx:id="home" mnemonicParsing="false" text="Home">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu fx:id="alg1" mnemonicParsing="false" text="Alg #1">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu fx:id="alg2" mnemonicParsing="false" text="Alg #2">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
+          <Menu fx:id="alg2" mnemonicParsing="false" text="Swift 1.0.0.1" />
         </menus>
       </MenuBar>
+      <TabPane layoutX="12.0" layoutY="216.0" prefHeight="241.0" prefWidth="303.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Alg #1" />
+          <Tab text="Alg #2" />
+        </tabs>
+      </TabPane>
    </children>
 </Pane>
