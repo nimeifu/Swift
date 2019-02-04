@@ -23,24 +23,24 @@
             <Font size="29.0" />
          </font>
       </Button>
-      <TextField fx:id="question" layoutX="387.0" layoutY="42.0" onAction="#getManualInput" text="Queston" />
+      <TextField id="question" fx:id="question" layoutX="387.0" layoutY="42.0" onAction="#getManualInput" text="Question" />
       <Button fx:id="red" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="201.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: red;" text="1" textFill="WHITE">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <TextField fx:id="choice1" layoutX="387.0" layoutY="73.0" onAction="#getManualInput" text="Answer Choice #1" />
-      <TextField fx:id="choice2" layoutX="387.0" layoutY="104.0" onAction="#getManualInput" text="Answer Choice #2" />
-      <TextField fx:id="choice3" layoutX="387.0" layoutY="135.0" onAction="#getManualInput" text="Answer Choice #3" />
+      <TextField id="choice1" fx:id="choice1" layoutX="387.0" layoutY="73.0" onAction="#getManualInput" text="Answer Choice #1" />
+      <TextField id="choice2" fx:id="choice2" layoutX="387.0" layoutY="104.0" onAction="#getManualInput" text="Answer Choice #2" />
+      <TextField id="choice3" fx:id="choice3" layoutX="387.0" layoutY="135.0" onAction="#getManualInput" text="Answer Choice #3" />
       <Button fx:id="manualSubmit" layoutX="557.0" layoutY="86.0" mnemonicParsing="false" onAction="#getManualInput" text="Submit" />
       <Label layoutX="31.0" layoutY="15.0" prefHeight="104.0" prefWidth="161.0" text="Swift" textAlignment="CENTER" textFill="#4f3f99">
          <font>
             <Font name="Monotype Corsiva" size="79.0" />
          </font>
       </Label>
-      <ProgressBar layoutX="411.0" layoutY="225.0" prefWidth="200.0" progress="0.21" />
-      <ProgressBar layoutX="411.0" layoutY="316.0" prefWidth="200.0" progress="0.18" />
-      <ProgressBar layoutX="411.0" layoutY="400.0" prefWidth="200.0" progress="0.79" />
+      <ProgressBar id="progressone" layoutX="411.0" layoutY="225.0" prefWidth="200.0" progress="0.2" />
+      <ProgressBar id="progresstwo" layoutX="411.0" layoutY="316.0" prefWidth="200.0" progress="0.18" />
+      <ProgressBar id="progressthree" layoutX="411.0" layoutY="400.0" prefWidth="200.0" progress="0.79" />
       <Label layoutX="77.0" layoutY="130.0" text="Image" textFill="#462cc9">
          <font>
             <Font name="Palatino Linotype Italic" size="28.0" />

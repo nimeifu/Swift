@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.scene.control.ProgressBar;
+
 import java.awt.*;
 
 public class Controller {
@@ -14,6 +16,9 @@ public class Controller {
     String choiceInput1;
     String choiceInput2;
     String choiceInput3;
+    ProgressBar progressone;
+    ProgressBar progresstwo;
+    ProgressBar progressthree;
 
     public void getManualInput()
     {
@@ -25,12 +30,27 @@ public class Controller {
         System.out.println(questionInput+", "+choiceInput1+", "+choiceInput2+", "+choiceInput3);
     }
 
+    public void setProgressBarOne(double percent)
+    {
+        progressone.setProgress(percent);
+    }
 
+    public void setProgressBarTwo(double percent)
+    {
+        progresstwo.setProgress(percent);
+    }
 
+    public void setProgressBarThree(double percent)
+    {
+        progressthree.setProgress(percent);
+    }
 
-
-
-
+    public void resetAll()
+    {
+        progressone.setProgress(0);
+        progresstwo.setProgress(0);
+        progressthree.setProgress(0);
+    }
 
 
 
