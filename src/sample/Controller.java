@@ -25,13 +25,9 @@ public class Controller {
     Tab Alg1;
     @FXML
     Tab Alg2;
-    @FXML
     String questionInput;
-    @FXML
     String choiceInput1;
-    @FXML
     String choiceInput2;
-    @FXML
     String choiceInput3;
     @FXML
     ProgressBar progressone;
