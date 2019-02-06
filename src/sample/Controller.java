@@ -2,6 +2,7 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.Tab;
 
 import java.awt.*;
 
@@ -15,6 +16,8 @@ public class Controller {
     TextField choice3;
     TextField path;
     Button manualSubmit;
+    Tab Alg1;
+    Tab Alg2;
     String questionInput;
     String choiceInput1;
     String choiceInput2;
@@ -44,6 +47,11 @@ public class Controller {
         progressthree.setProgress(percent);
     }
 
+    public void displayAlgorithmOne(Tab Alg1)
+    {
+        
+
+    }
     public void resetAll() {
         progressone.setProgress(0);
         progresstwo.setProgress(0);

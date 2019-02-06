@@ -55,8 +55,8 @@
       </MenuBar>
       <TabPane layoutX="12.0" layoutY="216.0" prefHeight="241.0" prefWidth="303.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Alg #1" />
-          <Tab text="Alg #2" />
+          <Tab fx:id="Alg1" text="Alg #1" />
+          <Tab fx:id="Alg2" text="Alg #2" />
         </tabs>
       </TabPane>
    </children>
