@@ -11,19 +11,33 @@ public class Controller {
     // Manual Input
     @FXML
     TextField question;
+    @FXML
     TextField choice1;
+    @FXML
     TextField choice2;
+    @FXML
     TextField choice3;
+    @FXML
     TextField path;
+    @FXML
     Button manualSubmit;
+    @FXML
     Tab Alg1;
+    @FXML
     Tab Alg2;
+    @FXML
     String questionInput;
+    @FXML
     String choiceInput1;
+    @FXML
     String choiceInput2;
+    @FXML
     String choiceInput3;
+    @FXML
     ProgressBar progressone;
+    @FXML
     ProgressBar progresstwo;
+    @FXML
     ProgressBar progressthree;
 
     public void getManualInput() {
@@ -49,18 +63,28 @@ public class Controller {
 
     public void displayAlgorithmOne(Tab Alg1)
     {
-        
-
+        Alg1.setText(""+FullSearch+" .");
     }
-    public void resetAll() {
-        progressone.setProgress(0);
-        progresstwo.setProgress(0);
-        progressthree.setProgress(0);
+
+    public void displayAlgorithmTwo(Tab Alg2)
+    {
+        Alg2.setText(""+QuickSearch+" .");
     }
 
     public String getImagePath() {
         return (path.getText());
     }
+
+    public void resetAll() {
+        progressone.setProgress(0);
+        progresstwo.setProgress(0);
+        progressthree.setProgress(0);
+        Alg1.setText("");
+        Alg2.setText("");
+        path.setText(null);
+    }
+
+
 }
 
 
