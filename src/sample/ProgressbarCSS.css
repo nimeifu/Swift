@@ -1,0 +1,23 @@
+.progressone
+{
+    -fx-accent:GhostWhite;
+    -fx-control-inner-background:tomato;
+    -fx-border-radius:25px;
+    -fx-border-color:transparent;
+}
+
+.progresstwo
+{
+     -fx-accent:GhostWhite;
+     -fx-control-inner-background:HotPink;
+     -fx-border-radius:25px;
+     -fx-border-color:transparent
+}
+
+.progressthree
+{
+    -fx-accent:GhostWhite;
+    -fx-control-inner-background:DeepSkyBlue;
+    -fx-border-radius:25px;
+    -fx-border-color:transparent;
+}

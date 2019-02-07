@@ -8,23 +8,24 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button fx:id="blue" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="376.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: blue;" text="3" textFill="WHITE">
+      <Button fx:id="blue" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="376.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: DeepSkyBlue;" text="3" textFill="WHITE">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Button fx:id="orange" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="293.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: orange;" text="2" textFill="#f8f5f5">
+      <Button fx:id="orange" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="293.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: HotPink;" text="2" textFill="#f8f5f5">
          <font>
             <Font size="29.0" />
          </font>
       </Button>
       <TextField id="question" fx:id="question" layoutX="387.0" layoutY="42.0" onAction="#getManualInput" text="Question" />
-      <Button fx:id="red" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="201.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: red;" text="1" textFill="WHITE">
+      <Button fx:id="red" alignment="BOTTOM_LEFT" layoutX="349.0" layoutY="201.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" style="-fx-background-color: Tomato;" text="1" textFill="WHITE">
          <font>
             <Font size="30.0" />
          </font>
@@ -33,14 +34,17 @@
       <TextField id="choice2" fx:id="choice2" layoutX="387.0" layoutY="104.0" onAction="#getManualInput" text="Answer Choice #2" />
       <TextField id="choice3" fx:id="choice3" layoutX="387.0" layoutY="135.0" onAction="#getManualInput" text="Answer Choice #3" />
       <Button fx:id="manualSubmit" layoutX="557.0" layoutY="86.0" mnemonicParsing="false" onAction="#getManualInput" text="Submit" />
-      <Label layoutX="31.0" layoutY="15.0" prefHeight="104.0" prefWidth="161.0" text="Swift" textAlignment="CENTER" textFill="#4f3f99">
+      <Label layoutX="31.0" layoutY="15.0" prefHeight="104.0" prefWidth="161.0" text="Swift" textAlignment="CENTER" textFill="#884399">
          <font>
             <Font name="Monotype Corsiva" size="79.0" />
          </font>
+         <effect>
+            <DropShadow color="#ff6262" />
+         </effect>
       </Label>
-      <ProgressBar id="progressone" layoutX="411.0" layoutY="225.0" prefWidth="200.0" progress="0.2" />
-      <ProgressBar id="progresstwo" layoutX="411.0" layoutY="316.0" prefWidth="200.0" progress="0.18" />
-      <ProgressBar id="progressthree" layoutX="411.0" layoutY="400.0" prefWidth="200.0" progress="0.79" />
+      <ProgressBar id="progressone" fx:id="progressone" layoutX="401.0" layoutY="225.0" prefWidth="200.0" progress="0.2" styleClass="progressone" stylesheets="@/C:/Users/BT_1N3_23/IdeaProjects/Swift/src/sample/ProgressbarCSS.css" />
+      <ProgressBar id="progresstwo" fx:id="progresstwo" layoutX="401.0" layoutY="316.0" prefWidth="200.0" progress="0.18" styleClass="progresstwo" stylesheets="@/C:/Users/BT_1N3_23/IdeaProjects/Swift/src/sample/ProgressbarCSS.css" />
+      <ProgressBar id="progressthree" fx:id="progressthree" layoutX="401.0" layoutY="400.0" prefWidth="200.0" progress="0.79" styleClass="progressthree" stylesheets="@/C:/Users/BT_1N3_23/IdeaProjects/Swift/src/sample/ProgressbarCSS.css" />
       <Label layoutX="77.0" layoutY="130.0" text="Image" textFill="#462cc9">
          <font>
             <Font name="Palatino Linotype Italic" size="28.0" />
